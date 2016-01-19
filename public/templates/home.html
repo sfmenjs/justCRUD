@@ -1,0 +1,13 @@
+<md-content layout="row"layout-padding layout-wrap>
+  <div flex="33" ng-repeat="b in vm.bears" layout="column" layout-padding>
+    <md-card layout-padding>
+      <h3>{{b.name}}</h3>
+      <h4>{{b.color}}</h4>
+      <h4>{{b.species}}</h4>
+      <div layout layout-align="center">
+        <md-button class="md-raised md-primary" ui-sref="EditBear({id: b._id})">Edit</md-button>
+        <md-button class="md-raised md-warn" ng-click="vm.deleteBear(b);">&times;</md-button>
+      </div>
+    </md-card>
+  </div>
+</md-content>

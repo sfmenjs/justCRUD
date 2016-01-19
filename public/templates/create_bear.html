@@ -1,0 +1,24 @@
+<md-content layout="column" layout-padding layout-fill>
+  <md-card layout-padding>
+    <div layout layout-align="center">
+      <h1>Create Bear</h1>
+    </div>
+    <form ng-submit="vm.createBear()" layout-padding>
+      <md-input-container>
+        <label>Name</label>
+        <input type="text" ng-model="vm.bear.name" required />
+      </md-input-container>
+      <md-input-container>
+        <label>Color</label>
+        <input type="text" ng-model="vm.bear.color" required />
+      </md-input-container>
+      <md-input-container>
+        <label>Species</label>
+        <input type="text" ng-model="vm.bear.species" required />
+      </md-input-container>
+      <div layout layout-align="center">
+        <md-button type="submit" class="md-raised md-warn">Submit</md-button>
+      </div>
+    </form>
+  </md-card>
+</md-content>
